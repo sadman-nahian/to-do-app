@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box; 
+    margin:0;
+    border:0;  
+    outline:none; 
+  
+    text-decoration:none
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    background-color: #333;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: #222;
+    color:white;
+    padding: 1rem;
+    min-height: 80vh;
+    max-height: 80vh;
+    width:50%;
+    overflow:auto;
+    border-radius: 5%;
+}
+h1{
+    text-align: center;
+    margin:1.5rem 0;
+}
+.todo-form{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#inputToDo{
+    width:80%;
+    padding:.8rem;
+    border-radius: .5rem;
+    margin-right: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    
+}
+.btn{
+    border-radius: .8rem;
+    width:15%;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color:#ffcc00;
+    cursor: pointer;
+
+
+
+}
+.btn:hover{
+    box-shadow:1px 1px 2px white
+}
+#lists {
+    
+    width: 100%; /* Ensure the parent container takes up the full width */
+}
+
+.li-style{
+    width:100%;
+    text-align:left;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    margin:1rem 0;
+    padding:.5rem;
+    list-style-type: circle;
+    z-index: 10;
+    border:.8px solid black;
+    border-radius: 10%;
+    padding:.8rem;
+   
+    
+}
+.btn1{
+    color:black;
+    background-color: #ffcc00;
+    border-radius: .8rem;
+    padding: 0.3rem;
+}
+.btn2{
+    color:red;
+    background-color: #ffcc00;
+    border-radius: .8rem;
+    padding: 0.3rem;
+    margin-left: .8rem;
+}
+.btn1:hover{
+    background-color: white;
+}
+.btn2:hover{
+    background-color: white;
+}
+.bg-success{
+    color:black;
+    border-left: 4px solid green;
+    background-color:rgb(212, 246, 212);
+    font-size: 1.5rem;
+    margin-top:.5rem;
+   text-align: left;
+   padding:1px
+   
+}
+.bg-delete{
+    color:black;
+    border-left: 4px solid red;
+    background-color:rgb(240, 175, 175);
+    font-size: 1.5rem;
+    margin-top:.5rem;
+   text-align: left;
+   
+}
+.completed .span-left {
+    text-decoration: line-through;
+    color: #888; /* Adjust the color for strikethrough text */
+}
